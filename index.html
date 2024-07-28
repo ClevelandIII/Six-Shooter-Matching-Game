@@ -19,8 +19,8 @@
         <section id="game-container">
             <!-- This is where we display the flip and match counters -->
             <div id="ui-container">
-                <h3>Flips: <span id="flip-count">0</span></h3>
-                <h3>Matches: <span id="match-count">0</span></h3>
+                <h3 id="flippy">Flips: <span id="flip-count">0</span></h3>
+                <h3 id="matchy">Matches: <span id="match-count">0</span></h3>
             </div>
 
             <!-- This is where our cards will be rendered -->
@@ -30,6 +30,10 @@
         <div class="btn-container">
             <button class="reset-btn" onclick="resetGame()">Reset</button>
         </div>
+
+        <footer>
+            <img src="undertaleImg/footer.png" alt="bottom of page">
+        </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.1/underscore.js"></script>
         <script src="https://bit.ly/491fCed"></script>

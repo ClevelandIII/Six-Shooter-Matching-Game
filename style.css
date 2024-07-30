@@ -1,6 +1,6 @@
 :root {
-    --card-width: 125px;
-    --card-height: 175px;
+    --card-width: 8vw;
+    --card-height: 11.2vw;
     --dark-purple: #522745;
     --light-purple: #793b61;
 }
@@ -17,48 +17,47 @@ html {
 body {
     margin: 0;
     background: url(undertaleImg/cardOutline.png) no-repeat center;
-    background-size: 100vh;
+    background-size: 50vw;
     /* background-position: center;
     background-size: cover; */
     color: white;
     font-family: "determination-mono", sans-serif;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 #flippy {
     background-color: black;
-    padding: 4vh;
-    border: white 1vh solid;
-    outline: black 1vh solid;
+    padding: 2vw;
+    border: white 0.5vw solid;
+    outline: black 0.5vw solid;
 }
 
 #matchy {
     background-color: black;
-    padding: 4vh;
-    border: white 1vh solid;
-    outline: black 1vh solid;
+    padding: 2vw;
+    border: white 0.5vw solid;
+    outline: black 0.5vw solid;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 3.5vw;
     text-align: center;
 }
 
 #ui-container {
     text-align: center;
-    margin-right: 3vh;
-    margin-bottom: 20vh;
+    margin-bottom: 10vw;
 }
 
 #ui-container h3 {
     margin: 0;
     display: inline-block;
-    font-size: 40px;
+    font-size: 2vw;
     text-align: center;
 }
 
 #ui-container h3:first-child {
-    margin-right: 40px;
+    margin-right: 4vw;
 }
 
 /* #game-container {
@@ -67,16 +66,16 @@ h1 {
 
 #card-container {
     font-size: 0;
-    width: calc((var(--card-width) + 2vh + 12px) * 4);
+    width: calc((var(--card-width) + 1vw + 1.2vw) * 4);
     margin: 0 auto;
-    padding-left: 4vh;
-    padding-bottom: 10vh;
+    padding-left: 5vw;
+    padding-bottom: 8vw;
 }
 
 .card {
     display: inline-block;
     position: relative;
-    margin: 1vh;
+    margin: 0.5vw;
     width: var(--card-width);
     height: var(--card-height);
     border: 2px solid transparent;
@@ -181,18 +180,17 @@ h1 {
 .btn-container {
     display: flex;
     justify-content: center;
-    padding-top: 15vh;
+    padding-top: 3vw;
 }
 
 .reset-btn {
-    margin: 0 0 30px 0;
-    padding: 20px 40px;
+    padding: 2vw 4vw;
     background-color: var(--light-purple);
     color: white;
     border: 0px;
-    border-radius: 10px;
+    border-radius: 1vw;
     font-family: "determination-mono", sans-serif;
-    font-size: 1.5em;
+    font-size: 1vw;
 }
 
 .reset-btn:hover {
@@ -200,10 +198,71 @@ h1 {
     background-color: #371b2d;
 }
 
-footer img {
+/* footer img {
     width: 100%;
-}
+} */
 
 footer {
-    margin-top: 3vh;
+    margin-top: 3vw;
+    background: url(undertaleImg/footer.png) no-repeat center;
+    background-size: 100%;
+    border: 1px solid var(--dark-purple);
+}
+
+footer p {
+    visibility: hidden;
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 10vw;
+    }
+
+    #ui-container {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #card-container {
+        font-size: 0;
+        width: calc((var(--card-width) + 1vw + 1.2vw) * 4);
+        margin: 0 auto;
+        padding-left: 4vw;
+        padding-top: 12vw;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 540px) {
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 16vw;
+    }
+
+    #ui-container {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #card-container {
+        font-size: 0;
+        width: calc((var(--card-width) + 1vw + 1.2vw) * 4);
+        margin: 0 auto;
+        padding-left: 2vw;
+        padding-top: 19vw;
+        padding-bottom: 0;
+    }
+
+    footer {
+        margin-top: 2vw;
+        background: url(undertaleImg/footer.png) no-repeat center;
+        background-size: 100%;
+        border: 1px solid var(--dark-purple);
+    }
 }
